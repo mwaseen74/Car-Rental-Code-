@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carento - Car Rental</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stylenew.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <span><i class="fa-solid fa-phone"></i> +1 222-555-33-99</span>
+            <span><i class="fa-solid fa-envelope"></i> sale@carento.com</span>
+        </div>
+        <nav>
+            <div class="logo"><a href="index.html">🚘 Car Rental</a></div>
+
+        </nav>
+    </header>
+    <div class="menu">
+        <button class="menu-btn" onclick="openSidebar()">☰</button>
+        <div id="sidebar" class="sidebar">
+            <span class="close-btn" onclick="closeSidebar()">&times;</span>
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="vehicle.html"><i class="fa-solid fa-car"></i>Vehicles</a>
+            <a href=""><i class="fa-solid fa-magnifying-glass-location"></i>Enquiry</a>
+            <a href="contact.html"><i class="fa-solid fa-address-book"></i>Contact</a>
+        </div>
+    </div>
+
+    <div class="fixed-container">
+        <div class="fixed-card">
+            <button class="open-modal-btn" onclick="openModal()"><i
+                    class="fa-solid fa-magnifying-glass-location"></i>Enquire Now</button>
+            <div id="enquiryModal" class="modal modal-lg">
+                <div class="modal-content ">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <h2>Car Rental Enquiry</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>Rental Date</label>
+                                <input type="date" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label>Car Type</label>
+                                <select required>
+                                    <option selected disabled>Select Car Type</option>
+                                    <option value="sedan">Sedan</option>
+                                    <option value="suv">SUV</option>
+                                    <option value="luxury">Luxury</option>
+                                    <option value="hatchback">Hatchback</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>Additional Notes</label>
+                                <textarea rows="3" placeholder="Any special request"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="enquiry-submit-btn">Submit Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-card"><a href="tel:+91-9782530998" target="_blank"><i class="fa-solid fa-phone"></i>Call</a>
+        </div>
+        <div class="fixed-card"><a href="https://wa.me/+91 80005 75452. " target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+        </div>
+        <div class="fixed-card"><a href="contact.html" target="_blank"><i
+                    class="fa-solid fa-address-book"></i>Contact</a></div>
+    </div>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h3>Find Your Perfect Car</h3>
+            <h1>Looking for a vehicle? <br> You’re in the perfect spot.</h1>
+            <p>
+                <i class="fa-regular fa-circle-check"></i> High quality at a low cost &nbsp;
+                <i class="fa-regular fa-circle-check"></i> Premium services &nbsp;
+                <i class="fa-regular fa-circle-check"></i> 24/7 roadside support.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="brands-section">
+        <h2>Premium Brands</h2>
+        <p>Unveil the Finest Selection of High-End Vehicles</p>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="assets/image/bugatti.png" alt="Bugatti"></div>
+                <div class="slide"><img src="assets/image/kia.png" alt="Jaguar"></div>
+                <div class="slide"><img src="assets/image/honda.png" alt="Honda"></div>
+                <div class="slide"><img src="assets/image/volvo.jpeg" alt="Chevrolet"></div>
+                <div class="slide"><img src="assets/image/acura.png" alt="Acura"></div>
+                <div class="slide"><img src="assets/image/kwid.webp" alt="BMW"></div>
+                <div class="slide"><img src="assets/image/toyota.png" alt="Toyota"></div>
+                <div class="slide"><img src="assets/image/lexus.png" alt="Lexus"></div>
+                <div class="slide"><img src="assets/image/revolt.png" alt="Lexus"></div>
+                <!-- Duplicate slides for smooth infinite scrolling -->
+                <div class="slide"><img src="assets/image/bugatti.png" alt="Bugatti"></div>
+                <div class="slide"><img src="assets/image/kia.png" alt="Jaguar"></div>
+                <div class="slide"><img src="assets/image/honda.png" alt="Honda"></div>
+                <div class="slide"><img src="assets/image/volvo.jpeg" alt="Chevrolet"></div>
+                <div class="slide"><img src="assets/image/acura.png" alt="Acura"></div>
+                <div class="slide"><img src="assets/image/kwid.webp" alt="BMW"></div>
+                <div class="slide"><img src="assets/image/toyota.png" alt="Toyota"></div>
+                <div class="slide"><img src="assets/image/lexus.png" alt="Lexus"></div>
+                <div class="slide"><img src="assets/image/revolt.png" alt="Lexus"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="most-search">
+        <div class="one">
+            <div>
+                <h2>Available Vehicles</h2>
+                <p> The world's leading car brands</p>
+            </div>
+            <div class="see-more-container">
+                <a href="vehicle.html" class="see-more-btn">See More</a>
+            </div>
+
+        </div>
+        <div class="car-container">
+
+            <!-- Car Card 1 -->
+            <div class="car-card">
+                <a href="singlecar.html"> <img src="assets/image/car-1.png" alt="Mercedes-Benz C220d"></a>
+                <div class="car-info">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 4.96 (672 reviews)</span>
+                    <a href="singlecar.html">
+                        <h2>Mercedes-Benz C220d</h2>
+                        <p><i class="fa-solid fa-location-dot"></i> Jaipur</p>
+                    </a>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-road"></i> 25,100 miles</li>
+                        <li><i class="fa-solid fa-cog"></i> Automatic</li>
+                        <li><i class="fa-solid fa-gas-pump"></i> Diesel</li>
+                        <li><i class="fa-solid fa-users"></i> 7 seats</li>
+                    </ul>
+                    <div class="price"> <span>From <strong>$498.25</strong></span></div>
+                    <div class="more-details">
+                        <button class="book-now"><a href="singlecar.html">Details</a></button>
+                        <button class="book-now" onclick="openModal1('modal2')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal1('modal2')">&times;</span>
+                    <div class="modal-header">Car Rental Enquiry - Modal 2</div>
+
+                    <form id="enquiryForm2">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="carModel" class="form-label">Car Model</label>
+                                <select class="form-select" id="carModel" required>
+                                    <option selected disabled>Select a car</option>
+                                    <option value="BMW X5">BMW X5</option>
+                                    <option value="Audi A6">Audi A6</option>
+                                    <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+                                    <option value="Toyota Fortuner">Toyota Fortuner</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pickupLocation" class="form-label">Pickup Location</label>
+                            <input type="text" class="form-control" id="pickupLocation"
+                                placeholder="Enter pickup location" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="pickupDate" class="form-label">Pickup Date</label>
+                                <input type="date" class="form-control" id="pickupDate" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="dropoffDate" class="form-label">Drop-off Date</label>
+                                <input type="date" class="form-control" id="dropoffDate" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentMethod" class="form-label">Payment Method</label>
+                            <select class="form-select" id="paymentMethod" required>
+                                <option selected disabled>Select Payment Method</option>
+                                <option value="Credit Card">Credit Card</option>
+                                <option value="Debit Card">Debit Card</option>
+                                <option value="PayPal">PayPal</option>
+                                <option value="Cash on Pickup">Cash on Pickup</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Confirm Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Car Card 2 -->
+            <div class="car-card">
+                <a href="singlecar.html"> <img src="assets/image/kwidcar.webp" alt="Mercedes-Benz C220d"></a>
+                <div class="car-info">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 4.96 (672 reviews)</span>
+                    <a href="singlecar.html">
+                        <h2>Renault KWID</h2>
+                        <p><i class="fa-solid fa-location-dot"></i> Jaipur</p>
+                    </a>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-road"></i> 25,100 miles</li>
+                        <li><i class="fa-solid fa-cog"></i> Automatic</li>
+                        <li><i class="fa-solid fa-gas-pump"></i> Diesel</li>
+                        <li><i class="fa-solid fa-users"></i> 7 seats</li>
+                    </ul>
+                    <div class="price"> <span>From <strong>$498.25</strong></span></div>
+                    <div class="more-details">
+                        <button class="book-now"><a href="singlecar.html">Details</a></button>
+                        <button class="book-now" onclick="openModal1('modal2')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal1('modal2')">&times;</span>
+                    <div class="modal-header">Car Rental Enquiry - Modal 2</div>
+
+                    <form id="enquiryForm2">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="carModel" class="form-label">Car Model</label>
+                                <select class="form-select" id="carModel" required>
+                                    <option selected disabled>Select a car</option>
+                                    <option value="BMW X5">BMW X5</option>
+                                    <option value="Audi A6">Audi A6</option>
+                                    <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+                                    <option value="Toyota Fortuner">Toyota Fortuner</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pickupLocation" class="form-label">Pickup Location</label>
+                            <input type="text" class="form-control" id="pickupLocation"
+                                placeholder="Enter pickup location" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="pickupDate" class="form-label">Pickup Date</label>
+                                <input type="date" class="form-control" id="pickupDate" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="dropoffDate" class="form-label">Drop-off Date</label>
+                                <input type="date" class="form-control" id="dropoffDate" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentMethod" class="form-label">Payment Method</label>
+                            <select class="form-select" id="paymentMethod" required>
+                                <option selected disabled>Select Payment Method</option>
+                                <option value="Credit Card">Credit Card</option>
+                                <option value="Debit Card">Debit Card</option>
+                                <option value="PayPal">PayPal</option>
+                                <option value="Cash on Pickup">Cash on Pickup</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Confirm Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Car Card 3 -->
+            <div class="car-card">
+                <a href="singlecar.html"> <img src="assets/image/kiacar.webp" alt="Mercedes-Benz C220d"></a>
+                <div class="car-info">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 4.96 (672 reviews)</span>
+                    <a href="singlecar.html">
+                        <h2>Kia Syros</h2>
+                        <p><i class="fa-solid fa-location-dot"></i> Jaipur</p>
+                    </a>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-road"></i> 25,100 miles</li>
+                        <li><i class="fa-solid fa-cog"></i> Automatic</li>
+                        <li><i class="fa-solid fa-gas-pump"></i> Diesel</li>
+                        <li><i class="fa-solid fa-users"></i> 7 seats</li>
+                    </ul>
+                    <div class="price"> <span>From <strong>$498.25</strong></span></div>
+                    <div class="more-details">
+                        <button class="book-now"><a href="singlecar.html">Details</a></button>
+                        <button class="book-now" onclick="openModal1('modal2')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal1('modal2')">&times;</span>
+                    <div class="modal-header">Car Rental Enquiry - Modal 2</div>
+
+                    <form id="enquiryForm2">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="carModel" class="form-label">Car Model</label>
+                                <select class="form-select" id="carModel" required>
+                                    <option selected disabled>Select a car</option>
+                                    <option value="BMW X5">BMW X5</option>
+                                    <option value="Audi A6">Audi A6</option>
+                                    <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+                                    <option value="Toyota Fortuner">Toyota Fortuner</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pickupLocation" class="form-label">Pickup Location</label>
+                            <input type="text" class="form-control" id="pickupLocation"
+                                placeholder="Enter pickup location" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="pickupDate" class="form-label">Pickup Date</label>
+                                <input type="date" class="form-control" id="pickupDate" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="dropoffDate" class="form-label">Drop-off Date</label>
+                                <input type="date" class="form-control" id="dropoffDate" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentMethod" class="form-label">Payment Method</label>
+                            <select class="form-select" id="paymentMethod" required>
+                                <option selected disabled>Select Payment Method</option>
+                                <option value="Credit Card">Credit Card</option>
+                                <option value="Debit Card">Debit Card</option>
+                                <option value="PayPal">PayPal</option>
+                                <option value="Cash on Pickup">Cash on Pickup</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Confirm Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- car card 4 -->
+            <div class="car-card">
+                <a href="singlecar.html"> <img src="assets/image/Amaze_1-1.webp" alt="Mercedes-Benz C220d"></a>
+                <div class="car-info">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 4.96 (672 reviews)</span>
+                    <a href="singlecar.html">
+                        <h2>Honda Amaze</h2>
+                        <p><i class="fa-solid fa-location-dot"></i> Jaipur</p>
+                    </a>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-road"></i> 25,100 miles</li>
+                        <li><i class="fa-solid fa-cog"></i> Automatic</li>
+                        <li><i class="fa-solid fa-gas-pump"></i> Diesel</li>
+                        <li><i class="fa-solid fa-users"></i> 7 seats</li>
+                    </ul>
+                    <div class="price"> <span>From <strong>$498.25</strong></span></div>
+                    <div class="more-details">
+                        <button class="book-now"><a href="singlecar.html">Details</a></button>
+                        <button class="book-now" onclick="openModal1('modal2')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal1('modal2')">&times;</span>
+                    <div class="modal-header">Car Rental Enquiry - Modal 2</div>
+
+                    <form id="enquiryForm2">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="carModel" class="form-label">Car Model</label>
+                                <select class="form-select" id="carModel" required>
+                                    <option selected disabled>Select a car</option>
+                                    <option value="BMW X5">BMW X5</option>
+                                    <option value="Audi A6">Audi A6</option>
+                                    <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+                                    <option value="Toyota Fortuner">Toyota Fortuner</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pickupLocation" class="form-label">Pickup Location</label>
+                            <input type="text" class="form-control" id="pickupLocation"
+                                placeholder="Enter pickup location" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="pickupDate" class="form-label">Pickup Date</label>
+                                <input type="date" class="form-control" id="pickupDate" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="dropoffDate" class="form-label">Drop-off Date</label>
+                                <input type="date" class="form-control" id="dropoffDate" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentMethod" class="form-label">Payment Method</label>
+                            <select class="form-select" id="paymentMethod" required>
+                                <option selected disabled>Select Payment Method</option>
+                                <option value="Credit Card">Credit Card</option>
+                                <option value="Debit Card">Debit Card</option>
+                                <option value="PayPal">PayPal</option>
+                                <option value="Cash on Pickup">Cash on Pickup</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Confirm Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- car card 5 -->
+            <div class="car-card">
+                <a href="singlecar.html"> <img src="assets/image/volvocar.avif" alt="Mercedes-Benz C220d"></a>
+                <div class="car-info">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 4.96 (672 reviews)</span>
+                    <a href="singlecar.html">
+                        <h2>Volvo Cars unveils S90</h2>
+                        <p><i class="fa-solid fa-location-dot"></i> Jaipur</p>
+                    </a>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-road"></i> 25,100 miles</li>
+                        <li><i class="fa-solid fa-cog"></i> Automatic</li>
+                        <li><i class="fa-solid fa-gas-pump"></i> Diesel</li>
+                        <li><i class="fa-solid fa-users"></i> 7 seats</li>
+                    </ul>
+                    <div class="price"> <span>From <strong>$498.25</strong></span></div>
+                    <div class="more-details">
+                        <button class="book-now"><a href="singlecar.html">Details</a></button>
+                        <button class="book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal1('modal2')">&times;</span>
+                    <div class="modal-header">Car Rental Enquiry - Modal 2</div>
+
+                    <form id="enquiryForm2">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="carModel" class="form-label">Car Model</label>
+                                <select class="form-select" id="carModel" required>
+                                    <option selected disabled>Select a car</option>
+                                    <option value="BMW X5">BMW X5</option>
+                                    <option value="Audi A6">Audi A6</option>
+                                    <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+                                    <option value="Toyota Fortuner">Toyota Fortuner</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pickupLocation" class="form-label">Pickup Location</label>
+                            <input type="text" class="form-control" id="pickupLocation"
+                                placeholder="Enter pickup location" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="pickupDate" class="form-label">Pickup Date</label>
+                                <input type="date" class="form-control" id="pickupDate" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="dropoffDate" class="form-label">Drop-off Date</label>
+                                <input type="date" class="form-control" id="dropoffDate" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentMethod" class="form-label">Payment Method</label>
+                            <select class="form-select" id="paymentMethod" required>
+                                <option selected disabled>Select Payment Method</option>
+                                <option value="Credit Card">Credit Card</option>
+                                <option value="Debit Card">Debit Card</option>
+                                <option value="PayPal">PayPal</option>
+                                <option value="Cash on Pickup">Cash on Pickup</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Confirm Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- car card 6 -->
+            <div class="car-card">
+                <a href="singlecar.html"> <img src="assets/image/bmwcar.jpg" alt="Mercedes-Benz C220d"></a>
+                <div class="car-info">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 4.96 (672 reviews)</span>
+                    <a href="singlecar.html">
+                        <h2>BMW</h2>
+                        <p><i class="fa-solid fa-location-dot"></i> Jaipur</p>
+                    </a>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-road"></i> 25,100 miles</li>
+                        <li><i class="fa-solid fa-cog"></i> Automatic</li>
+                        <li><i class="fa-solid fa-gas-pump"></i> Diesel</li>
+                        <li><i class="fa-solid fa-users"></i> 7 seats</li>
+                    </ul>
+                    <div class="price"> <span>From <strong>$498.25</strong></span></div>
+                    <div class="more-details">
+                        <button class="book-now"><a href="singlecar.html">Details</a></button>
+                        <button class="book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal1('modal2')">&times;</span>
+                    <div class="modal-header">Car Rental Enquiry - Modal 2</div>
+
+                    <form id="enquiryForm2">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="carModel" class="form-label">Car Model</label>
+                                <select class="form-select" id="carModel" required>
+                                    <option selected disabled>Select a car</option>
+                                    <option value="BMW X5">BMW X5</option>
+                                    <option value="Audi A6">Audi A6</option>
+                                    <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+                                    <option value="Toyota Fortuner">Toyota Fortuner</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pickupLocation" class="form-label">Pickup Location</label>
+                            <input type="text" class="form-control" id="pickupLocation"
+                                placeholder="Enter pickup location" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="pickupDate" class="form-label">Pickup Date</label>
+                                <input type="date" class="form-control" id="pickupDate" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="dropoffDate" class="form-label">Drop-off Date</label>
+                                <input type="date" class="form-control" id="dropoffDate" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentMethod" class="form-label">Payment Method</label>
+                            <select class="form-select" id="paymentMethod" required>
+                                <option selected disabled>Select Payment Method</option>
+                                <option value="Credit Card">Credit Card</option>
+                                <option value="Debit Card">Debit Card</option>
+                                <option value="PayPal">PayPal</option>
+                                <option value="Cash on Pickup">Cash on Pickup</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Confirm Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="best-car-container">
+        <div class="container01">
+            <!-- Left Side Video Section -->
+            <div class="video-section">
+                <video controls>
+                    <source src="your-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Right Side Content Section -->
+            <div class="content-section">
+                <button>Best Car Rental System</button>
+                <h3><strong>Receive a Competitive Offer</strong> - Sell Your Car to Us Today.</h3>
+                <p>We are committed to delivering exceptional service, competitive pricing, and a diverse selection of
+                    options for our customers.</p>
+
+                <!-- Feature Points -->
+                <ul class="features">
+                    <li>Expert Certified Mechanics</li>
+                    <li>Get Reasonable Price</li>
+                    <li>Genuine Spares Parts</li>
+                    <li>First Class Services</li>
+                    <li>24/7 Road Assistance</li>
+                    <li>Free Pick-Up & Drop-Offs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="presting-car">
+        <h2>HOW IT WORKS</h2>
+        <h1>Presenting Your New Go-To Car </h1>
+        <h1> Rental Experience</h1>
+
+        <div class="presting-item">
+            <div class="presting">
+                <img src="assets/image/carlocationsvg.png" alt="Location">
+                <h3>Choose a Location</h3>
+                <p>Select the ideal destination to begin your journey with ease</p>
+            </div>
+            <div class="presting">
+                <img src="assets/image/carchoocesvg.png" alt="Vehicle">
+                <h3>Choose Your Vehicle</h3>
+                <p>Browse our fleet and find the perfect car for your needs</p>
+            </div>
+            <div class="presting">
+                <img src="assets/image/race-carssvg.svg" alt="Verification">
+                <h3>Verification</h3>
+                <p>Review your information and confirm your booking</p>
+            </div>
+            <div class="presting">
+                <img src="assets/image/carkeysvg.jpg" alt="Journey">
+                <h3>Begin Your Journey</h3>
+                <p>Start your adventure with confidence and ease</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- testimonial-cards -->
+    <div class="testimonials-section">
+        <button class="testimonial-button">
+            <div class="avatars">
+                <div class="avatar"><img src="assets/image/tes1.jpeg" alt="User"></div>
+                <div class="avatar"><img src="assets/image/tes6.jpeg" alt="User"></div>
+                <div class="avatar"><img src="assets/image/tes8.jpeg" alt="User"></div>
+            </div>
+            Testimonials
+        </button>
+        <h2>Our Valuable Clients Says</h2>
+
+        <div class="container03">
+            <div class="mover-wrapper">
+                <div class="mover" id="testimonialSlider">
+                    <div class="testimonial-card">
+                        <h3>Great Experience</h3>
+                        <p>Highly professional and reliable service.</p>
+                        <div class="testimonial-author">
+                            <img src="assets/image/tes9.jpeg" alt="User">
+                            <div class="author-info">
+                                <strong>Emily Davis</strong>
+                                <span>Los Angeles</span>
+                            </div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Amazing Service</h3>
+                        <p>Friendly staff and prompt support.</p>
+                        <div class="testimonial-author">
+                            <img src="assets/image/tes8.jpeg" alt="User">
+                            <div class="author-info">
+                                <strong>John Smith</strong>
+                                <span>New York</span>
+                            </div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Highly Recommend</h3>
+                        <p>Best decision I made this year.</p>
+                        <div class="testimonial-author">
+                            <img src="assets/image/tes7.jpeg" alt="User">
+                            <div class="author-info">
+                                <strong>Sophia Lee</strong>
+                                <span>San Francisco</span>
+                            </div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Fantastic Support</h3>
+                        <p>Quick response and great communication.</p>
+                        <div class="testimonial-author">
+                            <img src="assets/image/tes6.jpeg" alt="User">
+                            <div class="author-info">
+                                <strong>Michael Brown</strong>
+                                <span>Chicago</span>
+                            </div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Outstanding Quality</h3>
+                        <p>Exceeded my expectations.</p>
+                        <div class="testimonial-author">
+                            <img src="assets/image/tes5.jpeg" alt="User">
+                            <div class="author-info">
+                                <strong>Olivia Wilson</strong>
+                                <span>Miami</span>
+                            </div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <!-- Cards को डुप्लिकेट कर रहे हैं ताकि Smooth Infinite Loop बने -->
+                    <div class="testimonial-card">
+                        <h3>Great Experience</h3>
+                        <p>Highly professional and reliable service.</p>
+                        <div class="testimonial-author">
+                            <img src="assets/image/tes9.jpeg" alt="User">
+                            <div class="author-info">
+                                <strong>Emily Davis</strong>
+                                <span>Los Angeles</span>
+                            </div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Amazing Service</h3>
+                        <p>Friendly staff and prompt support.</p>
+                        <div class="testimonial-author">
+                            <img src="assets/image/tes8.jpeg" alt="User">
+                            <div class="author-info">
+                                <strong>John Smith</strong>
+                                <span>New York</span>
+                            </div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Highly Recommend</h3>
+                        <p>Best decision I made this year.</p>
+                        <div class="testimonial-author">
+                            <img src="assets/image/tes7.jpeg" alt="User">
+                            <div class="author-info">
+                                <strong>Sophia Lee</strong>
+                                <span>San Francisco</span>
+                            </div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Fantastic Support</h3>
+                        <p>Quick response and great communication.</p>
+                        <div class="testimonial-author">
+                            <img src="assets/image/tes6.jpeg" alt="User">
+                            <div class="author-info">
+                                <strong>Michael Brown</strong>
+                                <span>Chicago</span>
+                            </div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Outstanding Quality</h3>
+                        <p>Exceeded my expectations.</p>
+                        <div class="testimonial-author">
+                            <img src="assets/image/tes5.jpeg" alt="User">
+                            <div class="author-info">
+                                <strong>Olivia Wilson</strong>
+                                <span>Miami</span>
+                            </div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="car-footer">
+        <div class="footer-container">
+            <!-- Location Section -->
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Car Rental Street</p>
+                <p>New York, NY 10001</p>
+                <p><i class="fa-solid fa-phone"></i> Phone: +1 234 567 890</p>
+                <p><i class="fa-solid fa-envelope"></i> Email: info@carrental.com</p>
+            </div>
+
+            <!-- Useful Links Section -->
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="privacy.html"><i class="fas fa-angle-right"></i> Privacy & Policy</a></li>
+                    <li><a href="refund.html"><i class="fas fa-angle-right"></i> Refund & Cancellations</a></li>
+                    <li><a href="faq.html"><i class="fas fa-angle-right"></i> FAQ's</a></li>
+                    <li><a href="signin.html"><i class="fas fa-angle-right"></i> Sign In</a></li>
+                    <li><a href="signup.html"><i class="fas fa-angle-right"></i>Sig Up</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+                    <li><a href="vehicle.html"><i class="fas fa-angle-right"></i>Vehicles</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+                    <div class="social-links">
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="footer-bottom">
+            <p><img src="assets/image/indiaflag.jpg" width="30" alt="">Made In India</p>
+            <p>&copy; 2025 Car Rental Design & Developed by <a href="">TEAM ESDC</a></p>
+        </div>
+    </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/index.js"></script>
+    <script>
+        // function openModal() {
+        //     document.getElementById("enquiryModal").style.display = "flex";
+        // }
+
+        // function closeModal() {
+        //     document.getElementById("enquiryModal").style.display = "none";
+        // }
+
+        // // Close modal when clicking outside content
+        // window.onclick = function (event) {
+        //     let modal = document.getElementById("enquiryModal");
+        //     if (event.target === modal) {
+        //         modal.style.display = "none";
+        //     }
+        // }
+
+        // function openModal1(modalId) {
+        //     document.getElementById(modalId).style.display = "flex";
+        // }
+
+        // // Function to Close Modal
+        // function closeModal1(modalId) {
+        //     document.getElementById(modalId).style.display = "none";
+        // }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.querySelector(".mover");
+
+            // Hover करने पर रोकना और छोड़ने पर फिर से चालू करना
+            slider.addEventListener("mouseenter", () => {
+                slider.style.animationPlayState = "paused";
+            });
+
+            slider.addEventListener("mouseleave", () => {
+                slider.style.animationPlayState = "running";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

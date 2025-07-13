@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Sliding Testimonials</title>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container03 {
+            max-width: 90%;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .mover-wrapper {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .mover {
+            display: flex;
+            gap: 15px;
+            width: max-content;
+            animation: scroll 13s linear infinite;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(-50%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .testimonial-card {
+            background-color: #ffffff;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            min-width: 300px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 16px;
+            width: 100%;
+        }
+
+        .testimonial-author img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        .author-info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+
+        .stars {
+            color: #facc15;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container03">
+        <div class="mover-wrapper">
+            <div class="mover" id="testimonialSlider">
+                <div class="testimonial-card">
+                    <h3>Great Experience</h3>
+                    <p>Highly professional and reliable service.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/image/tes9.jpeg" alt="User">
+                        <div class="author-info">
+                            <strong>Emily Davis</strong>
+                            <span>Los Angeles</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <h3>Amazing Service</h3>
+                    <p>Friendly staff and prompt support.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/image/tes8.jpeg" alt="User">
+                        <div class="author-info">
+                            <strong>John Smith</strong>
+                            <span>New York</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <h3>Highly Recommend</h3>
+                    <p>Best decision I made this year.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/image/tes7.jpeg" alt="User">
+                        <div class="author-info">
+                            <strong>Sophia Lee</strong>
+                            <span>San Francisco</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <h3>Fantastic Support</h3>
+                    <p>Quick response and great communication.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/image/tes6.jpeg" alt="User">
+                        <div class="author-info">
+                            <strong>Michael Brown</strong>
+                            <span>Chicago</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <h3>Outstanding Quality</h3>
+                    <p>Exceeded my expectations.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/image/tes5.jpeg" alt="User">
+                        <div class="author-info">
+                            <strong>Olivia Wilson</strong>
+                            <span>Miami</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+
+                <!-- Cards को डुप्लिकेट कर रहे हैं ताकि Smooth Infinite Loop बने -->
+                <div class="testimonial-card">
+                    <h3>Great Experience</h3>
+                    <p>Highly professional and reliable service.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/image/tes9.jpeg" alt="User">
+                        <div class="author-info">
+                            <strong>Emily Davis</strong>
+                            <span>Los Angeles</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <h3>Amazing Service</h3>
+                    <p>Friendly staff and prompt support.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/image/tes8.jpeg" alt="User">
+                        <div class="author-info">
+                            <strong>John Smith</strong>
+                            <span>New York</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <h3>Highly Recommend</h3>
+                    <p>Best decision I made this year.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/image/tes7.jpeg" alt="User">
+                        <div class="author-info">
+                            <strong>Sophia Lee</strong>
+                            <span>San Francisco</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <h3>Fantastic Support</h3>
+                    <p>Quick response and great communication.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/image/tes6.jpeg" alt="User">
+                        <div class="author-info">
+                            <strong>Michael Brown</strong>
+                            <span>Chicago</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <h3>Outstanding Quality</h3>
+                    <p>Exceeded my expectations.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/image/tes5.jpeg" alt="User">
+                        <div class="author-info">
+                            <strong>Olivia Wilson</strong>
+                            <span>Miami</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.querySelector(".mover");
+
+            // Hover करने पर रोकना और छोड़ने पर फिर से चालू करना
+            slider.addEventListener("mouseenter", () => {
+                slider.style.animationPlayState = "paused";
+            });
+
+            slider.addEventListener("mouseleave", () => {
+                slider.style.animationPlayState = "running";
+            });
+        });
+    </script>
+</body>
+</html>

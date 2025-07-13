@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Car Rental</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/stylenew.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 0;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 20px auto;
+            margin-top: 140px;
+        }
+        .faq {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 10px;
+            margin-top: 20px;
+        }
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            color: #007bff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span><i class="fa-solid fa-phone"></i> +1 222-555-33-99</span>
+            <span><i class="fa-solid fa-envelope"></i> sale@carento.com</span>
+        </div>
+        <nav>
+            <div class="logo"><a href="index.html">🚘 Car Rental</a></div>
+            
+        </nav>
+    </header>
+    <div class="menu">
+        <button class="menu-btn"  onclick="openSidebar()">☰</button>
+            <div id="sidebar" class="sidebar">
+            <span class="close-btn" onclick="closeSidebar()">&times;</span>
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="vehicle.html"><i class="fa-solid fa-car"></i>Vehicles</a>
+            <a href=""><i class="fa-solid fa-magnifying-glass-location"></i>Enquiry</a>
+            <a href="contact.html"><i class="fa-solid fa-address-book"></i>Contact</a>
+        </div>
+    </div>
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq">
+            <div class="faq-question">How do I book a car rental? <span>+</span></div>
+            <div class="faq-answer">You can book a car rental by visiting our website, selecting your car, and filling out the booking form.</div>
+        </div>
+        
+        <div class="faq">
+            <div class="faq-question">What documents are required for renting a car? <span>+</span></div>
+            <div class="faq-answer">You will need a valid driving license, an ID proof, and a credit card for security deposit.</div>
+        </div>
+        
+        <div class="faq">
+            <div class="faq-question">Is there a minimum rental period? <span>+</span></div>
+            <div class="faq-answer">Yes, the minimum rental period is 24 hours.</div>
+        </div>
+        
+        <div class="faq">
+            <div class="faq-question">Can I cancel my booking? <span>+</span></div>
+            <div class="faq-answer">Yes, you can cancel your booking. Please refer to our cancellation policy for more details.</div>
+        </div>
+    </div>
+
+    <footer class="car-footer">
+        <div class="footer-container">
+            <!-- Location Section -->
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Car Rental Street</p>
+                <p>New York, NY 10001</p>
+                <p><i class="fa-solid fa-phone"></i> Phone: +1 234 567 890</p>
+                <p><i class="fa-solid fa-envelope"></i> Email: info@carrental.com</p>
+            </div>
+
+            <!-- Useful Links Section -->
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="privacy.html"><i class="fas fa-angle-right"></i> Privacy & Policy</a></li>
+                    <li><a href="refund.html"><i class="fas fa-angle-right"></i> Refund & Cancellations</a></li>
+                    <li><a href="faq.html"><i class="fas fa-angle-right"></i> FAQ's</a></li>
+                    <li><a href="signin.html"><i class="fas fa-angle-right"></i> Sign In</a></li>
+                    <li><a href="signup.html"><i class="fas fa-angle-right"></i>Sig Up</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+                    <li><a href="vehicle.html"><i class="fas fa-angle-right"></i>Vehicles</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+                    <div class="social-links">
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p><img src="assets/image/indiaflag.jpg" width="30" alt="">Made In India</p>
+            <p>&copy; 2025 Car Rental Design & Developed by <a href="">TEAM ESDC</a></p>
+        </div>
+    </footer>
+    <script src="assets/js/index.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', function() {
+                let answer = this.nextElementSibling;
+                let icon = this.querySelector('span');
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    answer.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
